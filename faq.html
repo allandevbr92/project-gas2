@@ -4,6 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+
 <link rel="stylesheet" type="text/css" href="style.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -11,74 +13,57 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
-
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <title>FAQ</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
-
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 <style type="text/css">
-    .faq-item {
-        margin-bottom: 40px;
-        margin-top: 40px;
+    .navbar {
+        color: yellow !important;
+        padding: 10px 0;
     }
 
-    .faq-body {
-        display: none;
-        margin-top: 30px;
+    .navbar-brand {
+        color: white !important;
+        font-size: 28px;
+        font-weight: bold;
     }
 
-    .faq-wrapper {
-        width: 100%;
-        margin: 0 auto;
+    .navbar-brand:hover {
+        color: yellow !important;
+        font-size: 28px;
+        font-weight: bold;
     }
 
-    .faq-inner {
-        padding: 30px;
-        background: aliceblue;
+    .form-control {
+        border-radius: 5px;
+        border: none;
+        text-align: end;
+        background: #333;
     }
 
-    .faq-plus {
-        float: right;
-        font-size: 1.4em;
-        line-height: 1em;
-        cursor: pointer;
-    }
-
-    hr {
-        background-color: black;
-    }
-
-    #faq-card {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #container-faq {
-        background-color: aqua;
+    .form-control::placeholder {
+        color: yellow;
     }
 </style>
 
 
 </head>
 
-<header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<header class="top-bar">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="./index.html">GASOMETRO</a>
+            <a class="navbar-brand text-white" href="./index.html">GASÔMETRO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon" style="background-color: yellow;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
+                        <a class="nav-link text-white" href="./index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./faq.html">FAQ</a>
+                        <a class="nav-link text-white" href="./faq.html">FAQ</a>
                     </li>
                 </ul>
             </div>
@@ -90,7 +75,7 @@
     <div class="container" id="container-faq">
         <div class="row">
 
-            <div class="card" id="faq-card">
+            <div id="faq-card">
 
                 <div class="faq-wrapper">
 
@@ -176,24 +161,24 @@
 
 </body>
 
-<footer class="footer bg-light py-3">
+<footer class="footer py-3">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 text-center text-md-start">
-                <p>© 2023 Nome do Site. Todos os direitos reservados.</p>
-            </div>
-            <div class="col-md-6 text-center text-md-end">
-                <a href="https://www.linkedin.com/in/seulinkedin" target="_blank" rel="noopener"
-                    class="me-4 text-reset">
+
+            <div class="col-md-4 text-center text-md-center" style="color:yellow">
+                <a href="https://www.linkedin.com/in/allan-thomaz-9699b5211/" target="_blank" rel="noopener"
+                    class="me-4 text-reset" style="text-decoration:none">
                     <i class="fab fa-linkedin fa-lg"></i>
                 </a>
-                <a href="https://github.com/seugithub" target="_blank" rel="noopener" class="text-reset">
+                <a href="https://github.com/allandevbr92" target="_blank" rel="noopener" class="text-reset"
+                    style="text-decoration:none">
                     <i class="fab fa-github fa-lg"></i>
                 </a>
             </div>
         </div>
     </div>
 </footer>
+
 <script type="text/javascript">
     $(".faq-plus").on('click', function () {
         $(this).parent().parent().find('.faq-body').slideToggle();

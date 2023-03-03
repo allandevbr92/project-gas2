@@ -40,8 +40,13 @@ abastecerForm.addEventListener("submit", function (event) {
 
     const litrosAbastecidos = (valorAbastecimento / precoLitro).toFixed(2);
 
+    const litrosLabel = document.createElement("span");
+    litrosLabel.textContent = "Litros";
+
     inputLitros.textContent = litrosAbastecidos.replace(".", ",");
-    resultado.style.display = "block"; // mostra a div .resultado
+    inputLitros.insertAdjacentElement("afterend", litrosLabel);
+    resultado.style.display = "block";
+    
 });
 
 
