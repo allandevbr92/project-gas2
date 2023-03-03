@@ -40,8 +40,6 @@ abastecerForm.addEventListener("submit", function (event) {
 
     const litrosAbastecidos = (valorAbastecimento / precoLitro).toFixed(2);
 
-    const litrosLabel = document.createElement("span");
-    litrosLabel.textContent = "Litros";
 
     inputLitros.textContent = litrosAbastecidos.replace(".", ",");
     inputLitros.insertAdjacentElement("afterend", litrosLabel);
@@ -72,7 +70,7 @@ calculatorForm.addEventListener('submit', (event) => {
     const kmGasolina = kmLitroGasolina * litros;
     const kmEtanol = kmLitroEtanol * litros;
 
-    resultDiv.innerHTML = `Com ${litros.toFixed(2)} litros de gasolina, você pode percorrer ${kmGasolina.toFixed(2)} km.<br>Com ${litros.toFixed(2)} litros de etanol, você pode percorrer ${kmEtanol.toFixed(2)} km.`;
+    resultDiv.innerHTML = `${litros.toFixed(2)} litros de gasolina, irá percorrer ${kmGasolina.toFixed(2)} km.<br>${litros.toFixed(2)} litros de etanol, irá percorrer ${kmEtanol.toFixed(2)} km.`;
 });
 
 

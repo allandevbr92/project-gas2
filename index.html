@@ -20,6 +20,9 @@
     <title>Gasômetro</title>
 
     <style type="text/css">
+
+
+
         .navbar {
             color: yellow !important;
             padding: 10px 0;
@@ -32,22 +35,40 @@
         }
 
         .navbar-brand:hover {
-            color: yellow !important;
+            color: #00FF00 !important; 
             font-size: 28px;
             font-weight: bold;
         }
 
-        .form-control {
-            outline: unset;
-            border-radius: 5px;
-            border: none;
-            text-align: end;
-            background: #333;
+
+
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #00FF00 !important;
+            background-color: #333 !important;
         }
 
-        .form-control::placeholder {
-            color: yellow;
+        ::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #00FF00 !important;
+            background-color: #333 !important;
+            opacity: 1;
         }
+
+        :-ms-input-placeholder {
+            /* IE 10+ */
+            color: #00FF00 !important;
+            background-color: #333 !important;
+        }
+
+        :-moz-placeholder {
+            /* Firefox 18- */
+            color: #00FF00 !important;
+            background-color: #333 !important;
+            opacity: 1;
+        }
+
+
 
         .navbar-toggler {
             color: #00FF00 !important;
@@ -59,18 +80,10 @@
 
         }
 
-        form input,
-        form textarea {
-            outline: unset;
-            padding: 20px;
-        }
-
         .card {
             background: black;
         }
-
-
-
+        
     </style>
 
 </head>
@@ -113,32 +126,29 @@
                 <div class="card">
 
 
-                <figcaption class="figure-caption"><small class="small">Insira o preço do litro do etanol e da gasolina
-                        nos campos
-                        correspondentes, clique
-                        no botão "Calcular". O resultado mostrará qual dos dois combustíveis é mais vantajoso do ponto
-                        de vista financeiro.</small></figcaption>
+                    <figcaption class="figure-caption"><small class="small">Insira o preço do litro do etanol e da gasolina nos campos correspondentes, clique no botão "Calcular".O resultado mostrará qual dos dois combustíveis é mais vantajoso do
+                            ponto de vista financeiro.</small></figcaption>
 
-                <div class="card-body">
+                    <div class="card-body">
 
-                    <form class="form-group">
-                        <label class="form-label" for="preco-alcool">Valor Litro Etanol</label>
-                        <input type="number" id="preco-alcool" name="preco-alcool" class="form-control" min="0"
-                            step="0.01" required placeholder="0,00">
+                        <form class="form-group">
+                            <label class="form-label" for="preco-alcool">Valor Litro Etanol</label>
+                            <input type="number" id="preco-alcool" name="preco-alcool" class="form-control" min="0"
+                                step="0.01" required placeholder="0,00" class="form-range">
 
                             <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
-                        <label class="form-label" for="preco-gasolina">Valor Litro Gasolina</label>
-                        <input type="number" id="preco-gasolina" name="preco-gasolina" class="form-control" min="0"
-                            step="0.01" required placeholder="0,00">
+                            <label class="form-label" for="preco-gasolina">Valor Litro Gasolina</label>
+                            <input type="number" id="preco-gasolina" name="preco-gasolina" class="form-control" min="0"
+                                step="0.01" required placeholder="0,00">
 
                             <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
-                        <div><button class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg"
-                                type="submit">Calcular</button></div>
+                            <div><button class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg"
+                                    type="submit">Calcular</button></div>
 
-                    </form>
-                </div>
+                        </form>
+                    </div>
 
 
 
@@ -156,38 +166,36 @@
 
                 <div class="card">
 
-                    <hr  id="hr-body" class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
+                    <hr id="hr-body" class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
 
-                <figcaption class="figure-caption"><small class="small">Insira o valor do seu abastecimento e o preço do
-                        litro
-                        do combustível utilizado nos campos
-                        correspondentes e clique no botão "Calcular". O resultado mostrará quantos litros de combustível
-                        você irá abastecer.</small></figcaption>
+                    <figcaption class="figure-caption"><small class="small">Insira o valor do seu abastecimento e o preço do litro do combustível utilizado nos campos
+                            correspondentes e clique no botão "Calcular".O resultado mostrará quantos litros de
+                            combustível você irá abastecer.</small></figcaption>
 
 
-                <div class="card-body">
+                    <div class="card-body">
 
-                    <form class="form-group" id="abastecer-form">
-                        <label class="form-label" for="valor-abastecimento">Valor do Abastecimento</label>
-                        <input type="text" id="valor-abastecimento" class="form-control" placeholder="0,00">
+                        <form class="form-group" id="abastecer-form">
+                            <label class="form-label" for="valor-abastecimento">Valor do Abastecimento</label>
+                            <input type="text" id="valor-abastecimento" class="form-control" placeholder="0,00">
 
-                        <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
+                            <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
-                        <label class="form-label" for="preco-combustivel">Preço do Litro do Combustível</label>
-                        <input type="text" id="preco-combustivel" class="form-control" placeholder="0,00">
+                            <label class="form-label" for="preco-combustivel">Preço do Litro do Combustível</label>
+                            <input type="text" id="preco-combustivel" class="form-control" placeholder="0,00">
 
-                        <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
+                            <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
-                        <div><button class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg"
-                                type="submit">Calcular</button></div>
+                            <div><button class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg"
+                                    type="submit">Calcular</button></div>
 
 
-                    </form>
+                        </form>
+
+                    </div>
 
                 </div>
-
-            </div>
 
                 <div>
                     <div class="resposta" id="litros-abastecidos" id="litros-label"></div>
@@ -200,65 +208,56 @@
 
                 <div class="card">
 
-                    <hr  id="hr-body" class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
-
-                
-
-                <figcaption class="figure-caption"><small class="small">Insira o consumo médio de seu veículo em
-                        km/litro para gasolina e etanol, a
-                        quantidade de litros utilizada em uma viagem ou percurso e clique no botão "Calcular".</small>
-                </figcaption>
-
-
-                <div class="card-body">
-                    <form class="form-group" id="calculator">
-
-                        <div>
-                            <label for="km-litro-gasolina" class="form-label">Km/Litro (Gasolina)</label>
-                            <input type="number" step="any" class="form-control" id="km-litro-gasolina" placeholder="Km"
-                                name="km-litro-gasolina" required>
-                        </div>
-
-
-                        <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
-
-                        <div>
-                            <label for="km-litro-etanol" class="form-label">Km/Litro (Etanol)</label>
-                            <input type="number" step="any" class="form-control" id="km-litro-etanol"
-                                name="km-litro-etanol" placeholder="Km" required>
-                        </div>
-
-                        <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
-
-
-                        <div>
-                            <label for="litros" class="form-label">Quantidade de Litros</label>
-                            <input type="number" step="any" class="form-control" id="litros" name="litros"
-                                placeholder="Litros" required>
-                        </div>
+                    <hr id="hr-body" class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
 
 
+                    <figcaption class="figure-caption"><small class="small">Insira o consumo médio de seu veículo em
+                            km/litro para gasolina e etanol, a quantidade de litros utilizada em uma viagem ou percurso
+                            e clique no botão "Calcular".</small>
+                    </figcaption>
 
 
+                    <div class="card-body">
+                        <form class="form-group" id="calculator">
+
+                            <div>
+                                <label for="km-litro-gasolina" class="form-label">Km/Litro (Gasolina)</label>
+                                <input type="number" step="any" class="form-control" id="km-litro-gasolina"
+                                    placeholder="Km" name="km-litro-gasolina" required>
+                            </div>
 
 
+                            <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
-                        <button type="submit"
-                            class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg">Calcular</button>
+                            <div>
+                                <label for="km-litro-etanol" class="form-label">Km/Litro (Etanol)</label>
+                                <input type="number" step="any" class="form-control" id="km-litro-etanol"
+                                    name="km-litro-etanol" placeholder="Km" required>
+                            </div>
+
+                            <hr class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
 
 
-                    </form>
-                </div>
+                            <div>
+                                <label for="litros" class="form-label">Quantidade de Litros</label>
+                                <input type="number" step="any" class="form-control" id="litros" name="litros"
+                                    placeholder="Litros" required>
+                            </div>
+
+                            <button type="submit"
+                                class="btn btn-lg btn-primary btn-rounded shadow-sm gradient-bg">Calcular</button>
+                        </form>
+                    </div>
 
                 </div>
-
-
-
 
                 <div>
                     <div class="resposta" id="resultado"></div>
                 </div>
+
+                <hr display="none" class="my-3" style="border-width: 1px; border-style:solid; border-color: #00FF00">
+
 
 
             </div>

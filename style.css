@@ -34,6 +34,7 @@ label {
 }
 
 .card-body {
+    letter-spacing: 1px !important;
     border-radius: 15px;
     padding: 0;
     text-align: center;
@@ -83,6 +84,7 @@ label {
 }
 
 .small {
+    letter-spacing: 1px;    
     color: white;
 }
 
@@ -177,8 +179,28 @@ form {
     border-radius: 15px;
 }
 
-.form-group {
+
+.form-control {
+    color: #00FF00 !important;
+    outline: unset;
+    border-radius: 5px;
     border: none;
-    margin-bottom: 20px;
+    text-align: end;
+    background: #333 !important;
+}
+
+input {
+    border-color:  #00FF00 !important;
+}
+
+.resposta {
+    font-size: border;
+    margin: auto;
+    text-align: center;
+    max-width: 60%;
+    border-radius: 15px;
+    border: none;
+    color: black;
+    background-color: #00FF00;
 }
 

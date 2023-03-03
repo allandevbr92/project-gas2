@@ -31,7 +31,7 @@
         }
 
         .navbar-brand:hover {
-            color: yellow !important;
+            color: #00FF00 !important; 
             font-size: 28px;
             font-weight: bold;
         }
@@ -46,6 +46,8 @@
 
         }
 
+
+
         .form-control {
             border-radius: 5px;
             border: none;
@@ -53,13 +55,15 @@
             background: #333;
         }
 
-        .form-control::placeholder {
-            color: yellow;
-        }
 
         p {
-            letter-spacing: 1px;            
+            letter-spacing: 1px !important;
             color: white;
+        }
+
+        h6 {
+            letter-spacing: 1px !important;
+
         }
     </style>
 
@@ -74,7 +78,7 @@
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="background-color:#00FF00;"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" tyle="background-color: #00FF00" >
+            <div class="collapse navbar-collapse" id="navbarNav" tyle="background-color: #00FF00">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="./index.html">HOME</a>
@@ -100,34 +104,36 @@
 
                         <div class="faq-inner">
                             <div class="faq-item">
-                                <h5>
+                                <h6>
                                     O que é este site?
                                     <span class="faq-plus">&plus;</span>
-                                </h5>
+                                </h6>
                                 <div class="faq-body">
                                     <p>Este site é uma calculadora de consumo de combustível que permite comparar o
-                                        custo de abastecer com etanol ou gasolina, calcular a quantidade de litros de combustível
+                                        custo de abastecer com etanol ou gasolina, calcular a quantidade de litros de
+                                        combustível
                                         necessário para um valor de abastecimento e também calcular o consumo médio de
                                         combustível do seu veículo.</p>
                                 </div>
                             </div>
                             <hr>
                             <div class="faq-item">
-                                <h5>
+                                <h6>
                                     Como usar a calculadora de etanol vs. gasolina?
                                     <span class="faq-plus">&plus;</span>
-                                </h5>
+                                </h6>
                                 <div class="faq-body">
                                     <p>Insira o preço do litro do etanol e da gasolina nos campos correspondentes e
-                                        clique no botão "Calcular". O resultado mostrará qual dos dois combustíveis é mais vantajoso ponto de vista financeiro.</p>
+                                        clique no botão "Calcular". O resultado mostrará qual dos dois combustíveis é
+                                        mais vantajoso ponto de vista financeiro.</p>
                                 </div>
                             </div>
                             <hr>
                             <div class="faq-item">
-                                <h5>
+                                <h6>
                                     Como usar a calculadora de quantidade de litros?
                                     <span class="faq-plus">&plus;</span>
-                                </h5>
+                                </h6>
                                 <div class="faq-body">
                                     <p>Insira o valor do seu abastecimento e o preço do litro do combustível utilizado
                                         nos campos correspondentes e clique no botão "Calcular". O resultado mostrará
@@ -136,10 +142,10 @@
                             </div>
                             <hr>
                             <div class="faq-item">
-                                <h5>
+                                <h6>
                                     Como usar a calculadora de consumo médio?
                                     <span class="faq-plus">&plus;</span>
-                                </h5>
+                                </h6>
                                 <div class="faq-body">
                                     <p>Insira o consumo médio de seu veículo em km/litro para gasolina e etanol, a
                                         quantidade de litros utilizada em uma viagem ou percurso e clique no botão
@@ -151,10 +157,10 @@
                             </div>
                             <hr>
                             <div class="faq-item">
-                                <h5>
+                                <h6>
                                     Como o calculo sobre vantagem é feito ?
                                     <span class="faq-plus">&plus;</span>
-                                </h5>
+                                </h6>
                                 <div class="faq-body">
                                     <p>Para descobrir qual combustível é mais vantajoso financeiramente, basta dividir o
                                         preço do litro do etanol pelo preço do litro da gasolina. Se o resultado for
