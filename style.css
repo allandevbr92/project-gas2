@@ -3,9 +3,16 @@
     margin: 0;
 }
 
+#hr-body {
+    display: block;
+    width: 150px;
+    background: #00FF00;
+    background-color: #00FF00;
+    padding: 5px 5px;
+}
 
 label {
-    color: yellow;
+    color: #00FF00;
     text-align: end;
     margin: 0;
     padding: 0;
@@ -17,7 +24,7 @@ label {
 
 .top-bar {
     background-color: black;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid #00FF00;
 }
 
 .body {
@@ -26,8 +33,6 @@ label {
     background: black;
 }
 
-
-
 .card-body {
     border-radius: 15px;
     padding: 0;
@@ -35,13 +40,15 @@ label {
     margin-top: 50px;
     margin-bottom: 30px;
     border: none;
-    background-color: yellow;
+    background-color: black !important;
+    background: linear-gradient(to top right, #00FF00, #1d1d1d);
+
 }
 
 .btn {
-    border-color: yellow !important;;
+    border-color: #00FF00!important;;
     border-radius: 10px !important;
-    color: yellow !important;
+    color: #00FF00 !important;
     background: black !important;
     margin-top: 40px;
     font-size: 18px !important;
@@ -49,8 +56,8 @@ label {
 
 .btn:hover {
     color: black !important;
-    background: yellow !important;
-    border: 3px 3px solid black;
+    background: #00FF00 !important;
+    border: 3px 3px solid black !important;
 }
 
 
@@ -60,13 +67,13 @@ label {
 }
 
 .card-header button {
-    color: yellow !important;
+    color: #00FF00 !important;
     width: 100%;
     text-align: left;
 }
 
 .card-header button:hover {
-    color: yellow !important;
+    color: #00FF00 !important;
 
     text-decoration: none;
 }
@@ -80,8 +87,10 @@ label {
 }
 
 .figure-caption {
-    margin-top: 15px;
+    margin-top: 0px;
+    margin-bottom: 50px;
     padding: 0;
+    text-align: justify;
     text-transform: uppercase;
 }
 
@@ -94,13 +103,13 @@ label {
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
-    color: yellow;
+    color: #00FF00;
 }
 
 .footer {
     color: white;
     background-color: black;
-    border-top: 3px solid yellow;
+    border-top: 3px solid #00FF00;
 }
 
 .faq-item {
@@ -132,10 +141,11 @@ label {
 }
 
 #faq-card {
-    color: yellow;
+    color: #00FF00;
     border: none;
     font-size: 14px;
-    text-align: center;
+    text-align: justify;
+    letter-spacing: 1px;
     text-transform: uppercase;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -147,7 +157,7 @@ label {
 }
 
 .navbar-nav .nav-link:hover {
-    color: yellow !important;
+    color: #00FF00 !important;
 }
 
 #litros-label {
@@ -156,21 +166,13 @@ label {
     font-weight: bold;
 }
 
-
-#container-home {
-    border-right: 3px solid yellow;
-    border-left: 3px solid yellow;
-    background: linear-gradient(to top right, #800000, #FF0000);
-    padding-bottom: 110px;
-}
-
 .navbar-nav .nav-link:hover {
-    color: yellow !important;
+    color: #00FF00 !important;
 }
 
 form {
     border: none;
-    padding: 20px;
+    padding: 25px;
     background: black;
     border-radius: 15px;
 }
